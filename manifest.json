@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Gmail HTML Source",
+	"version": "1.0",
+	"applications": {
+		"gecko": {
+			"id": "gmailsource@mozilla.org"
+		}
+	},
+
+	"browser_action": {
+		"default_title": "Get Email Source"
+	}
+}
