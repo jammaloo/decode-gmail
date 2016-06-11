@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+	document.getElementById('source').addEventListener('click', function() {
+		this.focus();
+		this.select();
+	});
+
 	getSource();
 });
 
