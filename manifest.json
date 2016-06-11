@@ -1,14 +1,19 @@
 {
 	"manifest_version": 2,
-	"name": "Gmail HTML Source",
+
+	"name": "Decode Gmail Source",
+	"description": "This extension will decode emails from Gmail and show the raw source",
 	"version": "1.0",
-	"applications": {
-		"gecko": {
-			"id": "gmailsource@mozilla.org"
-		}
-	},
 
 	"browser_action": {
-		"default_title": "Get Email Source"
-	}
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [{
+		"matches": ["*://mail.google.com/*"],
+		"js": ["content.js"]
+	}],
+	"permissions": [
+		"activeTab"
+	]
 }
