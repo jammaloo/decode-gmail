@@ -1,2 +1,2 @@
 #!/bin/bash
-zip bin/gmaildecode.xpi * -x build bin/
+zip bin/gmaildecode.xpi * -x build bin/ license.txt README.md
