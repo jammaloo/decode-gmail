@@ -8,13 +8,13 @@ function getSource() {
 		chrome.tabs.sendMessage(tabs[0].id, {greeting: "GetEmailSource"}, function(response) {
 			var textarea = document.getElementById('source');
 			if(!response.source) {
-				textarea.innerText = "Something went wrong!";
+				textarea.innerText = "Uh, oh! Something went wrong!";
 				return;
 			}
 
 			var html_start = response.source.indexOf('<!DOCTYPE html');
 			if(html_start == -1) {
-				textarea.innerText = "Couldn't find message HTML";
+				textarea.innerText = "Couldn't find message HTML. Please make sure you have opened a Gmail email. ";
 				return;
 			}
 
