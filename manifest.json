@@ -5,8 +5,16 @@
 	"description": "This extension will decode emails from Gmail and show the raw source",
 	"version": "1.0",
 
+	"applications": {
+		"gecko": {
+			"id": "gmaildecode@jammaloo.com"
+		}
+	},
+	"icons": {
+		"32": "icon32.png"
+	},
 	"browser_action": {
-		"default_icon": "icon.png",
+		"default_icon": "icon32.png",
 		"default_popup": "popup.html"
 	},
 	"content_scripts": [{
