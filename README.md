@@ -18,7 +18,7 @@ For now it just looks for QP encoded HTML, with a simple message that matches Ac
 
 First [enable unsigned extensions](http://www.thewindowsclub.com/allow-unsigned-extensions-installed-firefox), then [install the addon manually](https://www.accessfirefox.org/Install_Addon_Manually.php)
 
-The latest version of the addon is [bin/gmaildecode.xpi](bin/gmaildecode.xpi)
+The latest version of the addon is [bin/gmaildecode.xpi](/raw/master/bin/gmaildecode.xpi)
 
 #####Chrome
 
