@@ -23,7 +23,7 @@ function getSource() {
 			var source = response.source.substr(html_start, html_end - html_start);
 
 			//decode it and display it
-			textarea.innerHTML = quotedPrintable.decode(source);
+			textarea.innerText = quotedPrintable.decode(source);
 		});
 	});
 }
